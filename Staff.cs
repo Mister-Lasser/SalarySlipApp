@@ -30,7 +30,7 @@ namespace SalarySlipApp
             }
             set
             {
-                if (hWorked > 0)
+                if (value > 0)
                     hWorked = value;
                 else
                     hWorked = 0;
@@ -49,7 +49,7 @@ namespace SalarySlipApp
         public override string ToString()
         {
             return 
-                $"Name:\t\t{NameOfStaff}\n" +
+                $"Name:\t\t\t{NameOfStaff}\n" +
                 $"Hours Worked:\t\t{HoursWorked}\n" +
                 $"Basic Pay:\t\t{BasicPay}\n" +
                 $"Total Pay:\t\t{TotalPay}";
